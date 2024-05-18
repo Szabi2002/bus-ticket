@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/bus-ticket/browser",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -22,5 +22,8 @@
       "source": "**",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "database": {
+    "rules": "database.rules.json"
+  }
 }
