@@ -24,10 +24,10 @@ export class LoginComponent implements OnDestroy{
     loadingSubscription?: Subscription;
 
     loading: boolean = false;
-   login(){
+   async login(){
+    this.loading = true;
     this.authService.login(this.email.value as string, this.password.value as string).then(asd => {
       this.router.navigateByUrl('/landing-page');
-      this.loading = false;
     }).catch(error =>{
       console.error(error);
       this.loading = false;
@@ -36,5 +36,6 @@ export class LoginComponent implements OnDestroy{
   }
   ngOnDestroy(): void {
     this.loadingSubscription?.unsubscribe();
+    console.log('Meg van hívva!');
   }
 }

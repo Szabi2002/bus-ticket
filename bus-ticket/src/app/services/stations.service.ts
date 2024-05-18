@@ -1,4 +1,7 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
+import { IStation } from '../models/Station';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,7 +9,14 @@ import { Injectable } from '@angular/core';
 })
 export class StationsService {
 
-  constructor(private http: HttpClient) { 
+  collectionName = "Stations";
 
+  constructor(private angularFireStore: AngularFirestore) { }
+
+  getStations(): Observable<IStation[]> {
+    return this.angularFireStore.collection<IStation>(this.collectionName).valueChanges();
   }
+  
 }
+
+

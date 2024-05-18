@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { ProfilComponent } from '../pages/profil/profil.component';
 
 @Injectable({
   providedIn: 'root'
@@ -24,4 +25,5 @@ export class AuthService {
     return this.auth.signOut();
   }
 
+  
 }

@@ -3,5 +3,4 @@ export interface Ticket{
     price: number;
     fromStation: string;
     toStation: string;
-    time: Date;
 }

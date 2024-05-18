@@ -30,6 +30,7 @@ import { MatOption } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -58,6 +59,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     MatOption,
     MatLabel, 
     MatSelectModule,
+    MatTableModule,
     AngularFireModule.initializeApp(environment.firebase)
    
   ],

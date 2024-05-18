@@ -1,1 +1,13 @@
-<p>profil works!</p>
+
+ <mat-list id="div" *ngIf="user">
+    <h1 [ngStyle]="{'background-color': isHighlighted ? 'green' : 'white'}"> Profilom </h1> 
+    <mat-list-item><p><strong>ID:</strong> {{ user.uid }}</p></mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item><p><strong>Name:</strong> {{ user.name }}</p></mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item> <p><strong>Email:</strong> {{ user.email }}</p></mat-list-item>
+  </mat-list>
+  <span><button id="torles" mat-raised-button (click)="remove(user)" (click)="logout(user)">Törlés</button></span>
+  <mat-list id="hiba" *ngIf="!user">
+    <mat-list-item><p>Felhasználói adatok nem érhetők el.</p></mat-list-item>
+  </mat-list>
