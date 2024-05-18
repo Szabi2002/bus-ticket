@@ -1,0 +1,35 @@
+  <div id="elso">
+    <h1> Menetrend kereső </h1> 
+    <mat-form-field>
+      <mat-label class="indulas">Honnan</mat-label>
+      <mat-select #mode value="Budapest">
+        <mat-option value="Budapest">Budapest</mat-option>
+        <mat-option value="Debrecen">Debrecen</mat-option>
+        <mat-option value="Kiskunfélegyháza">Kiskunfélegyháza</mat-option>
+        <mat-option value="Kistelek">Kistelek</mat-option>
+        <mat-option value="Balástya">Balástya</mat-option>
+        <mat-option value="Szeged">Szeged</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label class="erkezes">Hova</mat-label>
+      <mat-select #mode value="Budapest">
+        <mat-option value="Budapest">Budapest</mat-option>
+        <mat-option value="Debrecen">Debrecen</mat-option>
+        <mat-option value="Kiskunfélegyháza">Kiskunfélegyháza</mat-option>
+        <mat-option value="Kistelek">Kistelek</mat-option>
+        <mat-option value="Balástya">Balástya</mat-option>
+        <mat-option value="Szeged">Szeged</mat-option>
+      </mat-select>
+    </mat-form-field>
+        <div class="idopont">
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        </div>
+        <button mat-button (click)="navigateToSearch()">Keresés</button>
+    </div>
+
+    
+   

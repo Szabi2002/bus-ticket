@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bus-ticket": {
+      "hosting": {
+        "bus-ticket": [
+          "Buszjegy"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "buszjegy-b2dd6"
+  }
+}

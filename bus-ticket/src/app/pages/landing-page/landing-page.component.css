@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#elso {
+  margin: 2rem;
+  padding: 2rem;
+  border: solid black 2px;
+  width: 80%;
+  max-width: 600px; 
+  margin: 7rem auto; 
+}
+
+.indulas,
+.erkezes,
+.idopont {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+
+#masodik {
+  margin-bottom: 2rem;
+}
+
+select,
+input[type="datetime-local"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  font-size: larger;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: larger;
+}
+h1{
+  text-align: center;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+@media only screen and (min-width: 600px) {
+  #elso {
+    width: 60%;
+  }
+}

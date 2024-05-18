@@ -1,0 +1,19 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened></mat-sidenav>
+  <mat-sidenav-content>
+    <ul class="horizontal-menu">
+      <li>
+        <button mat-icon-button (click)="navigateToLandingPage()">
+          <mat-icon>home</mat-icon>
+        </button>
+      </li>
+      <li><a [routerLink]="'/signup'">Regisztráció</a></li>
+      <li *ngIf="bejelentkezettUser"><a [routerLink]="'/login'" (click)="logout()">Kijelentkezés</a></li>
+      <li *ngIf="!(bejelentkezettUser)"><a [routerLink]="'/login'">Bejelentkezés</a></li>
+      <li><a [routerLink]="'/bookings'">Jegyeim</a></li>
+      <li><a [routerLink]="'/search'">Keresés</a></li>
+      <li><a [routerLink]="'/profil'">Profilom</a></li>
+    </ul>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
