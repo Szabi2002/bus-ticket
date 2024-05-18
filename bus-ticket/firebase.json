@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "source": ".",
+    "public": "dist/bus-ticket/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

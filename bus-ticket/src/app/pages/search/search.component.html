@@ -1,0 +1,8 @@
+<div *ngFor="let ticket of tickets$ | async">
+    <p><strong>ID:</strong> {{ticket.Id}}</p>
+    <p><strong>Name:</strong> {{ticket.fromStation}}</p>
+    <p><strong>Name:</strong> {{ticket.toStation}}</p>
+    <p><strong>Price:</strong> {{ticket.price}} FT</p>
+    <button >Vásárlás</button>
+    <hr>
+  </div>
