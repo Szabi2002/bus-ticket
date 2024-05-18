@@ -17,4 +17,6 @@ export class TicketService {
   getTickets(): Observable<Ticket[]> {
     return this.angularFireStore.collection<Ticket>(this.collectionName).valueChanges();
   }
+
+  
 }

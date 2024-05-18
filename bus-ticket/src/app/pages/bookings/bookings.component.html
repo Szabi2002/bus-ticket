@@ -1,1 +1,15 @@
-<p>bookings works!</p>
+<div class="flex-box"><h1>Jegyeim:</h1>
+<div *ngIf="product | async as bookings;">
+    <mat-card *ngFor="let booking of bookings">
+      <mat-card-header id="cim">
+        <mat-card-title >Booking Details</mat-card-title>
+      </mat-card-header>
+      <mat-card-content id="card">
+        <p><strong>ID:</strong> {{ booking.Id }}</p>
+        <p><strong>From Station:</strong> {{ booking.fromStation }}</p>
+        <p><strong>To Station:</strong> {{ booking.toStation }}</p>
+        <p><strong>Price:</strong> {{ booking.price }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  </div>

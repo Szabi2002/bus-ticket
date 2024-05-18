@@ -35,4 +35,9 @@ body {
     font-size: larger;
     font-weight: bold;
   }
-  
+  @media only screen and (max-width: 600px) {
+    .horizontal-menu a,
+    .horizontal-menu button {
+      font-size: small;
+    }
+  }
