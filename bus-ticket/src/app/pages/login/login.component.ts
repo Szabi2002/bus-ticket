@@ -35,7 +35,6 @@ export class LoginComponent implements OnDestroy{
 
   }
   ngOnDestroy(): void {
-    this.loadingSubscription?.unsubscribe();
-    console.log('Meg van hívva!');
+    this.loadingSubscription?.unsubscribe()
   }
 }
